@@ -9,5 +9,5 @@ class Solution:
             if b in d:
                 # Return statement occurs before appending to dictionary. Reason: Dry run nums=[3, 3] and target=6
                 return [d[b], i] # return [index of b, i]
-            # Add current element, index to dictionary
+            # Add {current_element: index} to dictionary
             d[a] = i
