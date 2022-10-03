@@ -17,17 +17,7 @@ class Solution:
             else:
                 d_t[char_t] = 1
         # print(d_t)
-        if len(d_s) != len(d_t):
-            # print('len')
-            return False
+        if d_s == d_t:
+            return True
         else:
-            for char in d_s:
-                try:
-                    count_s = d_s[char]
-                    count_t = d_t[char]
-                    if count_s != count_t:
-                        return False
-                except KeyError:
-                    # Key not found in both dictionaries
-                    return False
-        return True
+            return False
