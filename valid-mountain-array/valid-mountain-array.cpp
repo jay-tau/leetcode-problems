@@ -2,6 +2,7 @@ class Solution {
 public:
     bool validMountainArray(vector<int>& arr) {
         int n = arr.size();
+        
         if (n < 3)
             return false;
         
@@ -10,9 +11,9 @@ public:
             diff[i] = arr[i+1] - arr[i];
         }
         
-        if (!(diff[0] > 0))
+        if (!(diff[0] > 0)) // Ensure first delta is positive
             return false;
-        if (!(diff[n-2] < 0))
+        if (!(diff[n-2] < 0)) // Ensure last delta is negative
             return false;
         
         int count = 0;
@@ -21,9 +22,7 @@ public:
             if (!(current_sign > 0))
                 count++;
         }
-        if (count == 1)
-             return true;
-        else
-             return false;
+        
+        return (count == 1) ? true : false; // There should be only 1 point of inflection
     }
 };
