@@ -28,4 +28,3 @@ class Solution:
                 print("e1<=e2")
                 nums1[i] = nums2[i2]
                 i2 -= 1
-            
