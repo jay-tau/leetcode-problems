@@ -1,15 +1,13 @@
 class Solution {
 public:
     int removeElement(vector<int>& nums, int val) {
-        // 0 <= nums[i] <= 50
-        int ans = nums.size();
+        int pointer = 0;
         for (int i = 0; i < nums.size(); i++) {
-            if (nums[i] == val) {
-                nums[i] = 1000;
-                ans--;
-            }
+            if (nums[i] == val)
+                continue;
+            nums[pointer] = nums[i];
+            pointer++;
         }
-        sort(nums.begin(), nums.end());
-        return ans;
+        return pointer;
     }
 };
