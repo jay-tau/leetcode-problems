@@ -1,6 +1,7 @@
 class Solution {
 public:
     vector<int> findDisappearedNumbers(vector<int>& nums) {
+        // O(n) time and O(1) space
         int n = nums.size();
         // If i is present, set nums[i-1] as negative
         for (int i = 0; i < n; i++) {
