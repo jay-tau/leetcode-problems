@@ -1,5 +1,6 @@
 class Solution:
     def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
+        # O(n) time and O(n) space
         count = {}
         for num in nums:
             count[num] = 1
