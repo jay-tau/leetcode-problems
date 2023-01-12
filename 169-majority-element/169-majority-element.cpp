@@ -7,19 +7,20 @@ public:
         for (auto x: nums) {
             if (current_element_score == 0)
                 majority_element = x;
-            if (x == majority_element)
-                current_element_score++;
-            else
-                current_element_score--;
+            current_element_score += ((x == majority_element)? 1 : -1);
+            // if (x == majority_element)
+            //     current_element_score++;
+            // else
+            //     current_element_score--;
         }
         int majority_element_count = 0;
-        for (auto x: nums) {
+        for (auto x: nums)
             majority_element_count += (x == majority_element);
-        }
         int n = nums.size();
-        if (majority_element_count > (n/2))
-            return majority_element;
-        else
-            return -1;
+        // if (majority_element_count > (n/2))
+        //     return majority_element;
+        // else
+        //     return -1;
+        return ((majority_element_count > (n/2)) ? majority_element : -1);
     }
 };
