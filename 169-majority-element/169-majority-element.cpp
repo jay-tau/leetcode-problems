@@ -1,7 +1,7 @@
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
-        // Boyer-Moore Voting Algoritm
+        // Boyer-Moore Voting Algorithm
         // O(2n) time and O(1) space
         int majority_element, current_element_score = 0;
         for (auto x: nums) {
