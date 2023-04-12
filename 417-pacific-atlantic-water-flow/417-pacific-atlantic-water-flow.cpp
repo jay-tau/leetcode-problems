@@ -16,15 +16,11 @@ public:
     vector<vector<bool>> visited_atlantic(num_rows, vector<bool>(num_cols, 0));
 
     for (int i = 0; i < num_rows; ++i) { // Vertical border
-      // visited_pacific[i][0] = -1;
       to_visit_pacific.push({i, 0});
-      // visited_atlantic[i][num_cols - 1] = -1;
       to_visit_atlantic.push({i, num_cols - 1});
     }
     for (int i = 0; i < num_cols; ++i) { // Horizontal border
-      // visited_pacific[0][i] = -1;
       to_visit_pacific.push({0, i});
-      // visited_atlantic[num_rows - 1][i] = -1;
       to_visit_atlantic.push({num_rows - 1, i});
     }
 
@@ -33,7 +29,6 @@ public:
       pair<int, int> current_cell = to_visit_pacific.front();
       to_visit_pacific.pop();
       int x = current_cell.first, y = current_cell.second;
-
       int current_height = heights[x][y];
 
       if (visited_pacific[x][y])
@@ -81,17 +76,6 @@ public:
         to_visit_atlantic.push({x, y + 1});
     }
 
-    // for (auto v : visited_pacific) {
-    //   for (auto x : v)
-    //     cout << x << " ";
-    //   cout << endl;
-    // }
-    // cout << endl;
-    // for (auto v : visited_atlantic) {
-    //   for (auto x : v)
-    //     cout << x << " ";
-    //   cout << endl;
-    // }
     vector<vector<int>> result;
     for (int i = 0; i < num_rows; ++i) {
       for (int j = 0; j < num_cols; ++j) {
