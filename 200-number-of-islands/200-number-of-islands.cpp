@@ -1,7 +1,3 @@
-#include <bits/stdc++.h>
-#include <vector>
-using namespace std;
-
 class Solution {
 public:
   bool isValid(int row, int col, int num_rows, int num_cols) {
