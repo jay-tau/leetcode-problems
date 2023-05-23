@@ -18,7 +18,7 @@ public:
                 ++writing_index;
             }
         }
-        return (writing_index);
+        return writing_index;
     }
 };
 
