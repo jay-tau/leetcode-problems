@@ -9,9 +9,11 @@ class Solution {
         long long ans = 0;
         int num_bits = 32;
         while (num_bits--) {
-            int bit = X % 2;
+            // int bit = X % 2;
+            ans <<= 1;
+            ans += X % 2;
             X >>= 1;
-            ans = (2*ans) + bit;
+            // ans = (2*ans) + bit;
         }
         return ans;
     }
