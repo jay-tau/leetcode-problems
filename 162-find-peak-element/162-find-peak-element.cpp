@@ -6,7 +6,7 @@ class Solution {
     if (n == 1) return 0;
     if (n == 2) return ((nums[0] > nums[1]) ? 0 : 1); // Return largest of 2 elements
 
-    int l = 0, r = n;
+    int l = -1, r = n;
     while (l < r) {
       int mid = l + (r - l) / 2;
       int current_element = nums[mid];
