@@ -23,6 +23,6 @@
           else
             l = mid + 1; // Move right
         }
-        return (l-1);
+        return -1;
       }
     };
