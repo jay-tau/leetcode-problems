@@ -18,7 +18,6 @@ class Solution {
     if (root == nullptr) return {};
 
     traversal.push_back(root->val);
-
     for (auto x : preorderTraversal(root->left)) traversal.push_back(x);
     for (auto x : preorderTraversal(root->right)) traversal.push_back(x);
 
