@@ -18,9 +18,9 @@ private:
         
         int left_height = height(node->left), right_height = height(node->right);
         
-        max_diameter = max(max_diameter, (left_height + right_height)); // Used to update global max diameter value
+        max_diameter = max(max_diameter, (left_height + right_height)); // Used to update global max diameter value. Only line that differs from a height function
         
-        return 1 + max(left_height, right_height);
+        return 1 + max(left_height, right_height); // Returns height
     }
 public:
     int diameterOfBinaryTree(TreeNode* root) {
