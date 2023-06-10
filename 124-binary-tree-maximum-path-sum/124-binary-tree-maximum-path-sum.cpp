@@ -17,11 +17,13 @@ private:
             return 0;
         
         int left_sum = search(node->left), right_sum = search(node->right);
-        int current_sum = (node->val) + max(0, left_sum) + max(0, right_sum);
         
+        // node is in the middle in current sum
+        int current_sum = (node->val) + max(0, left_sum) + max(0, right_sum); // Current sum will include subtree sums, only if they are positive
         max_sum = max(max_sum, current_sum);
         
-        return (node->val) + max(0, max(left_sum, right_sum));
+        // node is not in the middle. So that node can connect with its parent
+        return (node->val) + max(0, max(left_sum, right_sum)); // Only 1 subtree can be included. If both are negative, none are included
     }
 public:
     int maxPathSum(TreeNode* root) {
