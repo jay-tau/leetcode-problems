@@ -31,9 +31,8 @@ public:
                 if (grid[i][j] == 2) {
                     dist[i][j] = 0;
                     q.push({i, j, 0});
-                } else if (grid[i][j] == 0) {
+                } else if (grid[i][j] == 0)
                     dist[i][j] = 0;
-                }
             }
         }
         
@@ -46,17 +45,14 @@ public:
                 continue;
             
             visited[x][y] = true;
-            if (grid[x][y] == 1) {
+            if (grid[x][y] == 1)
                 dist[x][y] = t;
-            }
             
             // Add adjacent nodes
             for (auto adj_node: adj(current_node, n, m))
                 if (!visited[adj_node[0]][adj_node[1]] && grid[x][y] != 0)
                     q.push(adj_node);
         }
-        
-        // for (int i = 0; i < n; ++i) {for (int j = 0; j < m; ++j) {cout << dist[i][j] << " ";}cout << endl;}
         
         int max_time = INT_MIN;
         for (int i = 0; i < n; ++i) {
