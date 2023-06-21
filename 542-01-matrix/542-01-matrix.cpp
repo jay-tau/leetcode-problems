@@ -16,20 +16,19 @@ class Solution {
 
     return adj_list;
   }
-
  public:
   vector<vector<int>> updateMatrix(vector<vector<int>>& mat) {
     // Perform multisource BFS
     int n = mat.size(), m = mat[0].size();
     vector<vector<int>> dist(n, vector<int>(m, INT_MAX));  // Stores distancee
-    vector<vector<pair<int, int>>> parent(
-        n, vector<pair<int, int>>(m, {-1, -1}));  // Default parent = -1
+    // vector<vector<pair<int, int>>> parent(
+    //     n, vector<pair<int, int>>(m, {-1, -1}));  // Default parent = -1
     queue<pair<pair<int, int>, int>> q;           // {{x, y}, parent}
 
     for (int i = 0; i < n; ++i) {
       for (int j = 0; j < m; ++j) {
         if (mat[i][j] == 0) {                 // Source
-          parent[i][j] = {INT_MIN, INT_MIN};  // Source parent = -1
+          // parent[i][j] = {INT_MIN, INT_MIN};  // Source parent = -1
           dist[i][j] = 0;                     // Distance is 0
           q.push({{i, j}, 0});                // Push to queue
         }
@@ -44,12 +43,12 @@ class Solution {
 
       for (pair<int, int> adj_pair : adj(p.first, n, m)) {
         int adj_x = adj_pair.first, adj_y = adj_pair.second, adj_dist = d + 1;
-        pair<int, int> source_parent = {INT_MIN, INT_MIN};
-        if (parent[adj_x][adj_y] == source_parent)  // Skip other sources
+        // pair<int, int> source_parent = {INT_MIN, INT_MIN};
+        if (mat[adj_x][adj_y] == 0)  // Skip other sources
           continue;
         if (adj_dist < dist[adj_x][adj_y]) {
           dist[adj_x][adj_y] = adj_dist;        // Update distance
-          parent[adj_x][adj_y] = current_node;  // Update parent
+          // parent[adj_x][adj_y] = current_node;  // Update parent
           q.push({adj_pair, adj_dist});
         }
       }
