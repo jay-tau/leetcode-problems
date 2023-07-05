@@ -2,17 +2,14 @@ class Solution {
 private:
     void f(int index, int target, vector<int> &v, vector<int> &arr, vector<vector<int>> &ans) {
         int n = arr.size();
-        if ((index > n) || (target < 0)) { // Impossible
-            cout << "ERROR" << endl;
-            return;
-        }
+        if ((index > n) || (target < 0)) {cout << "ERROR" << endl;return;} // Impossible
         if (index == n) {
             if (target == 0)
                 ans.push_back(v);
-            return;
+            return; // Stop even when target < 0
         }
         
-        if (arr[index] <= target) {
+        if (arr[index] <= target) { // Ensure element fits in target
             v.push_back(arr[index]);
             f(index, target-arr[index], v, arr, ans); // Same index can be taken again
             v.pop_back();
