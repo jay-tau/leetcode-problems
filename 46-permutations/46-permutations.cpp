@@ -1,29 +1,28 @@
 class Solution {
 private:
-    void f(vector<int>&v, vector<bool> &remaining, vector<vector<int>> &ans, vector<int> &nums) {
+    void f(int index, vector<int> &v, vector<int> &nums, vector<vector<int>> &ans) {
         int n = nums.size();
-        if (v.size() == n) {
+        if ((index >= n) || (v.size() == n)) {
             ans.push_back(v);
             return;
         }
         
-        for (int i = 0; i < n; ++i) {
-            if (remaining[i]) {
-                v.push_back(nums[i]);
-                remaining[i] = false;
-                f(v, remaining, ans, nums);
-                v.pop_back();
-                remaining[i] = true;
-            }
+        for (int i = index; i < n; ++i) {
+            swap(nums[index], nums[i]); // Bring number to start
+            v.push_back(nums[index]);
+            
+            f(index+1, v, nums, ans);
+            
+            v.pop_back();
+            swap(nums[index], nums[i]); // Bring original number back to start
         }
     }
 public:
     vector<vector<int>> permute(vector<int>& nums) {
         vector<int> v;
         vector<vector<int>> ans;
-        vector<bool> remaining(nums.size(), true);
         
-        f(v, remaining, ans, nums);
+        f(0, v, nums, ans);
         
         return ans;
     }
