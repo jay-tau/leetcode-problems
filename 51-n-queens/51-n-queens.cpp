@@ -1,6 +1,6 @@
 class Solution {
 private:
-    void f(int x, int n, vector<string> &v, vector<vector<string>> &ans, vector<bool> &row_queen, vector<bool> &diag1, vector<bool> &diag2) {
+    void f(int x, int n, vector<string> &v, vector<vector<string>> &ans, vector<bool> &row, vector<bool> &diag1, vector<bool> &diag2) {
         if (x == n) {
             ans.push_back(v); // n-th queen is only placed if valid
             return;
@@ -9,15 +9,15 @@ private:
         
         for (int y = 0; y < n; ++y) { // x is fixed
         int current_row = y, current_diag1 = (x+y), current_diag2 = ((n-1) + (x-y));
-            if (!row_queen[current_row] && !diag1[current_diag1] && !diag2[current_diag2]) {                
+            if (!row[current_row] && !diag1[current_diag1] && !diag2[current_diag2]) {                
                 v[x][y] = 'Q';
-                row_queen[current_row] = true;
+                row[current_row] = true;
                 diag1[current_diag1] = true;
                 diag2[current_diag2] = true;
                 
-                f(x+1, n, v, ans, row_queen, diag1, diag2);
+                f(x+1, n, v, ans, row, diag1, diag2);
                 
-                row_queen[current_row] = false;
+                row[current_row] = false;
                 diag1[current_diag1] = false;
                 diag2[current_diag2] = false;
                 v[x][y] = '.';
