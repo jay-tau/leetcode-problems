@@ -3,11 +3,17 @@ private:
   int dp[100 + 1];
   int f(int i, vector<int> &nums) {
     int n = nums.size();
+    
     if (i >= n) return 0;
-    if (dp[i] != -1) return dp[i];
+    
+    int &ans = dp[i];
+    if (ans != -1) return ans;
+    
     // Take it and skip next
     // Skip this and take next
-    return dp[i] = max(nums[i] + f(i+2, nums), f(i+1, nums));
+    ans = max(nums[i] + f(i+2, nums), f(i+1, nums));
+    
+    return ans;
   }
 public:
     int rob(vector<int>& nums) {
