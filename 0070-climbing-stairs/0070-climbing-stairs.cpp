@@ -1,18 +1,19 @@
 class Solution {
-public:
-    int climbStairs(int n) {
-        if (n == 1)
-            return 1;
-        
-        
-        vector<int> memo(n+1);
-        
-        memo[1] = 1;
-        memo[2] = 2;
-        
-        for (int i = 3; i <= n; i++)
-            memo[i] = memo[i-1] + memo[i-2];
-        
-        return memo[n];
-    }
+ private:
+  vector<int> memo;
+  int dp(int i, const int n) {
+    if (i > n) return 0;
+
+    if (i == n) return 1; // Valid solution
+
+    if (memo[i] != -1) return memo[i];
+
+    return memo[i] = dp(i + 1, n) + dp(i + 2, n);
+  }
+
+ public:
+  int climbStairs(int n) {
+    memo.resize(n, -1);
+    return dp(0, n);
+  }
 };
