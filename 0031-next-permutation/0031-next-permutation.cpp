@@ -1,6 +1,35 @@
 class Solution {
 public:
     void nextPermutation(vector<int>& nums) {
-        next_permutation(nums.begin(), nums.end());
+        // From the back, move pointer till we find a drop, i.e. a[i] < a[i+1]. If no drop is found, then sort array and return
+        int n = nums.size();
+        int i_break = -1;
+        for (int i = 0; i < (n-1); i++)
+            if (nums[i] < nums[i+1])
+                i_break = i;
+        
+        // cout << i_break << endl;
+        
+        if (i_break == -1) { // Fully descending
+            sort(nums.begin(), nums.end());
+            return;
+        }
+        
+        // For the remaining elements, find x (smallest element greater than a[i])
+        // auto x_pos = upper_bound(nums.begin() + (i_break+1), nums.end(), nums[i_break]);
+        int x = INT_MAX;
+        int x_pos = -1;
+        for (int i = i_break + 1; i < n; i++)
+            if ((nums[i] > nums[i_break]) && (nums[i] < x)) {
+                x = nums[i];
+                x_pos = i;
+            }
+        // Swap nums[i] with x
+        swap(nums[i_break], nums[x_pos]);
+        
+        // return;
+        
+        // Place remaining elements in tail, in ascending order
+        sort(nums.begin() + (i_break+1), nums.end()); 
     }
 };
