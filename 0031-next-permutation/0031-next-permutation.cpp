@@ -27,7 +27,7 @@ public:
     // Swap nums[i] with x
     swap(nums[i_break], nums[x_pos]);
 
-    // Place remaining elements in tail, in ascending order
+    // Place remaining elements in tail, in ascending order.
     sort(nums.begin() + (i_break + 1), nums.end());
   }
 };
