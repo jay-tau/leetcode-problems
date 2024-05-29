@@ -18,7 +18,6 @@ public:
     // For the remaining elements, find x (smallest element greater than a[i])
     int x = INT_MAX;
     int x_pos = -1;
-
     for (int i = i_break + 1; i < n; i++)
       if ((nums[i] > nums[i_break]) && (nums[i] < x)) {
         x = nums[i];
