@@ -15,7 +15,7 @@ public:
       return;
     }
 
-    // For the remaining elements, find x (smallest element greater than a[i])
+    // For the remaining elements, find the last occurance x (smallest element greater than a[i])
     int x = INT_MAX;
     int x_pos = -1;
     for (int i = i_break + 1; i < n; i++)
@@ -28,10 +28,8 @@ public:
       
     // Swap nums[i] with x.
     swap(nums[i_break], nums[x_pos]);
-
-    // return;
       
     // Place remaining elements in tail, in ascending order. Since we maintain descending order property, we can simply reverse it
-    reverse(nums.begin() + (i_break + 1), nums.end());
+    sort(nums.begin() + (i_break + 1), nums.end());
   }
 };
