@@ -30,6 +30,6 @@ public:
     swap(nums[i_break], nums[x_pos]);
       
     // Place remaining elements in tail, in ascending order. Since we maintain descending order property, we can simply reverse it
-    sort(nums.begin() + (i_break + 1), nums.end());
+    reverse(nums.begin() + (i_break + 1), nums.end());
   }
 };
