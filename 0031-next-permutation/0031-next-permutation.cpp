@@ -19,15 +19,19 @@ public:
     int x = INT_MAX;
     int x_pos = -1;
     for (int i = i_break + 1; i < n; i++)
-      if ((nums[i] > nums[i_break]) && (nums[i] < x)) {
+      if ((nums[i] > nums[i_break]) && (nums[i] <= x)) {
         x = nums[i];
         x_pos = i;
       }
 
-    // Swap nums[i] with x
+      // cout << nums[i_break] << endl;
+      
+    // Swap nums[i] with x.
     swap(nums[i_break], nums[x_pos]);
 
-    // Place remaining elements in tail, in ascending order.
-    sort(nums.begin() + (i_break + 1), nums.end());
+    // return;
+      
+    // Place remaining elements in tail, in ascending order. Since we maintain descending order property, we can simply reverse it
+    reverse(nums.begin() + (i_break + 1), nums.end());
   }
 };
