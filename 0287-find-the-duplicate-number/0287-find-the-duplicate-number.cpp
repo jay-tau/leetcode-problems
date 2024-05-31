@@ -1,6 +1,7 @@
 class Solution {
 public:
     int findDuplicate(vector<int>& nums) {
+        // Modifies the array, but uses constant extra space
         int n = nums.size() - 1;
         
         // Set the value as negative if the number at that index is already seen
