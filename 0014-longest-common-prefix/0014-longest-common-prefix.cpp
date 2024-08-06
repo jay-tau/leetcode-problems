@@ -13,7 +13,7 @@ public:
                 if (x[j] == s[j]) current_max++;
                 else break;
             }
-            cout << i << " " << current_max << endl;
+            // cout << i << " " << current_max << endl;
             global_min = min(global_min, current_max);
         }
         
