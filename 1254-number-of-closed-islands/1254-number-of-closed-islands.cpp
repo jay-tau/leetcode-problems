@@ -9,16 +9,16 @@ public:
         cout << "x_size: " << x_size << ", y_size: " << y_size << endl;
 
         // Find all edges
-        set<pair<int, int>> boundaries;
+        vector<pair<int, int>> boundaries;
         for (int i = 0; i < y_size; i++) {
-            if (grid[0][i] == 0) boundaries.emplace(0, i);
-            if (grid[x_size-1][i] == 0) boundaries.emplace(x_size-1, i);
+            if (grid[0][i] == 0) boundaries.emplace_back(0, i);
+            if (grid[x_size-1][i] == 0) boundaries.emplace_back(x_size-1, i);
         }
         for (int i = 0; i < x_size; i++) {
-            if (grid[i][0] == 0) boundaries.emplace(i, 0);
-            if (grid[i][y_size-1] == 0) boundaries.emplace(i, y_size-1);
+            if (grid[i][0] == 0) boundaries.emplace_back(i, 0);
+            if (grid[i][y_size-1] == 0) boundaries.emplace_back(i, y_size-1);
         }
-        cout << "boundaries: "; for (auto p: boundaries) cout << "(" << p.F << "," << p.S << ")" << " "; cout << endl;
+        // cout << "boundaries: "; for (auto p: boundaries) cout << "(" << p.F << "," << p.S << ")" << " "; cout << endl;
 
         // Start a graph traversal from every edge
         queue<pair<int, int>> q;
