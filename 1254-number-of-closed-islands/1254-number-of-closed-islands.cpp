@@ -89,24 +89,18 @@ public:
 
     static void dfs(const pair<int, int> &start, vector<vector<int>> &grid) {
         int x_size = grid.size(), y_size = grid[0].size();
-        
-        queue<pair<int, int>> q;
-        q.emplace(start);
 
-        while (!q.empty()) {
-            auto [x, y] = q.front();
-            q.pop();
+        auto [x, y] = start;
 
-            if (grid[x][y] == 0) continue;
-            grid[x][y] = 0;
+        if (grid[x][y] == 0) return;
+        grid[x][y] = 0;
 
-            vector<pair<int, int>> neighbors;
-            neighbors.reserve(4);
-            populateNeighbors(x, y, x_size, y_size, neighbors);
+        vector<pair<int, int>> neighbors;
+        neighbors.reserve(4);
+        populateNeighbors(x, y, x_size, y_size, neighbors);
 
-            cout << "neighbours of (" << x << "," << y << "): "; for (auto p: neighbors) cout << "(" << p.F << "," << p.S << ")"; cout << endl;
+        cout << "neighbours of (" << x << "," << y << "): "; for (auto p: neighbors) cout << "(" << p.F << "," << p.S << ")"; cout << endl;
 
-            for (const auto &neighbor: neighbors) dfs(neighbor, grid);
-        }
+        for (const auto &neighbor: neighbors) dfs(neighbor, grid);
     }
 };
