@@ -3,12 +3,9 @@ public:
     vector<string> createGrid(int m, int n) {
         vector<string> grid(m, string(n, '#'));
 
-
-        // Cover top-left to bottom-right
-        for (int i = 0; i < m; i++)
+        for (int i = 0; i < m; i++) // Cover top-left to bottom-right
             grid[i][0] = '.';
-        // Cover bottom-left to bottom-right
-        for (int i = 0; i < n; i++)
+        for (int i = 0; i < n; i++) // Cover bottom-left to bottom-right
             grid[m - 1][i] = '.';
 
         return grid;
