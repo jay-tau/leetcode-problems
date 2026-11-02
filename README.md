@@ -14,6 +14,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/jay-tau/leetcode-problems/tree/master/0169-majority-element) |
 | [1254-number-of-closed-islands](https://github.com/jay-tau/leetcode-problems/tree/master/1254-number-of-closed-islands) |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/jay-tau/leetcode-problems/tree/master/3619-count-islands-with-total-value-divisible-by-k) |
 | [3882-minimum-xor-path-in-a-grid](https://github.com/jay-tau/leetcode-problems/tree/master/3882-minimum-xor-path-in-a-grid) |
@@ -46,4 +47,24 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [3882-minimum-xor-path-in-a-grid](https://github.com/jay-tau/leetcode-problems/tree/master/3882-minimum-xor-path-in-a-grid) |
+## Hash Table
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/jay-tau/leetcode-problems/tree/master/0169-majority-element) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/jay-tau/leetcode-problems/tree/master/0169-majority-element) |
+## Sorting
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/jay-tau/leetcode-problems/tree/master/0169-majority-element) |
+## Counting
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/jay-tau/leetcode-problems/tree/master/0169-majority-element) |
+## Boyer–Moore Majority Vote Algorithm
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/jay-tau/leetcode-problems/tree/master/0169-majority-element) |
 <!---LeetCode Topics End-->
