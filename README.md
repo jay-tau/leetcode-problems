@@ -16,6 +16,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0053-maximum-subarray](https://github.com/jay-tau/leetcode-problems/tree/master/0053-maximum-subarray) |
 | [0169-majority-element](https://github.com/jay-tau/leetcode-problems/tree/master/0169-majority-element) |
+| [0229-majority-element-ii](https://github.com/jay-tau/leetcode-problems/tree/master/0229-majority-element-ii) |
 | [1254-number-of-closed-islands](https://github.com/jay-tau/leetcode-problems/tree/master/1254-number-of-closed-islands) |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/jay-tau/leetcode-problems/tree/master/3619-count-islands-with-total-value-divisible-by-k) |
 | [3882-minimum-xor-path-in-a-grid](https://github.com/jay-tau/leetcode-problems/tree/master/3882-minimum-xor-path-in-a-grid) |
@@ -53,6 +54,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/jay-tau/leetcode-problems/tree/master/0169-majority-element) |
+| [0229-majority-element-ii](https://github.com/jay-tau/leetcode-problems/tree/master/0229-majority-element-ii) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -62,12 +64,15 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/jay-tau/leetcode-problems/tree/master/0169-majority-element) |
+| [0229-majority-element-ii](https://github.com/jay-tau/leetcode-problems/tree/master/0229-majority-element-ii) |
 ## Counting
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/jay-tau/leetcode-problems/tree/master/0169-majority-element) |
+| [0229-majority-element-ii](https://github.com/jay-tau/leetcode-problems/tree/master/0229-majority-element-ii) |
 ## Boyer–Moore Majority Vote Algorithm
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/jay-tau/leetcode-problems/tree/master/0169-majority-element) |
+| [0229-majority-element-ii](https://github.com/jay-tau/leetcode-problems/tree/master/0229-majority-element-ii) |
 <!---LeetCode Topics End-->
