@@ -15,6 +15,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/jay-tau/leetcode-problems/tree/master/0053-maximum-subarray) |
+| [0152-maximum-product-subarray](https://github.com/jay-tau/leetcode-problems/tree/master/0152-maximum-product-subarray) |
 | [0169-majority-element](https://github.com/jay-tau/leetcode-problems/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/jay-tau/leetcode-problems/tree/master/0229-majority-element-ii) |
 | [1254-number-of-closed-islands](https://github.com/jay-tau/leetcode-problems/tree/master/1254-number-of-closed-islands) |
@@ -45,6 +46,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/jay-tau/leetcode-problems/tree/master/0053-maximum-subarray) |
+| [0152-maximum-product-subarray](https://github.com/jay-tau/leetcode-problems/tree/master/0152-maximum-product-subarray) |
 | [3882-minimum-xor-path-in-a-grid](https://github.com/jay-tau/leetcode-problems/tree/master/3882-minimum-xor-path-in-a-grid) |
 ## Bit Manipulation
 |  |
