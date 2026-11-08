@@ -26,9 +26,9 @@ class Solution:
                     x_right = nums[right]
                     ans.append([x, x_left, x_right])
 
-                    while left < n and nums[left] == x_left:
+                    while left < right and nums[left] == x_left:
                         left += 1
-                    while right > i and nums[right] == x_right:
+                    while left < right and nums[right] == x_right:
                         right -= 1
 
         return ans
