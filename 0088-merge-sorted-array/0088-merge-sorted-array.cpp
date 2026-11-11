@@ -5,10 +5,9 @@ public:
 
         for (int writer = m + n - 1; writer >= 0; writer--) {
             int a = INT_MIN, b = INT_MIN;
-            if (left >= 0)
-                a = nums1[left];
-            if (right >= 0)
-                b = nums2[right];
+            
+            if (left >= 0) a = nums1[left];
+            if (right >= 0) b = nums2[right];
 
             if (a >= b) {
                 nums1[writer] = a;
