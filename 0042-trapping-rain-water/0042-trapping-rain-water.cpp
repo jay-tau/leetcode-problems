@@ -4,7 +4,7 @@ public:
         int n = height.size();
 
         int water = 0;
-        int left = 0, right = n - 1;
+        int left = 0, right = n-1;
         int left_wall = INT_MIN, right_wall = INT_MIN;
 
         while (left <= right) {
