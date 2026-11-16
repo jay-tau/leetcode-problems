@@ -9,7 +9,7 @@ public:
         unordered_map<int, int> m; // (element, index)
     
         for (int i = 0; i < n; i++)
-            auto [it, inserted] = m.insert_or_assign(nums[i], i); // Overwrite the older index
+            auto [_, _] = m.insert_or_assign(nums[i], i); // Overwrite the older index
 
         for (int x_i = 0; x_i < n; x_i++) {
             int x = nums[x_i];
