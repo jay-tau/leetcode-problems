@@ -9,11 +9,10 @@ public:
         unordered_map<int, int> m; // (element, index)
         m.reserve(n);
     
-        for (int i = 0; i < n; i++)
-            auto [_, _] = m.insert_or_assign(nums[i], i); // Overwrite the older index
-
         for (int x_i = 0; x_i < n; x_i++) {
             int x = nums[x_i];
+
+            // Search
             auto it = m.find(target - x);
             if (it != m.end()) {
                 auto [y, y_i] = *it;
@@ -24,6 +23,9 @@ public:
                     break;
                 }
             }
+
+            // Insert
+            auto [_, _] = m.insert_or_assign(x, x_i); // Overwrite the older index
         }
 
         return ans;
