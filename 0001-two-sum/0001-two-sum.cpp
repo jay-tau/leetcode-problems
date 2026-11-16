@@ -7,6 +7,7 @@ public:
         ans.reserve(2);
 
         unordered_map<int, int> m; // (element, index)
+        m.reserve(n);
     
         for (int i = 0; i < n; i++)
             auto [_, _] = m.insert_or_assign(nums[i], i); // Overwrite the older index
