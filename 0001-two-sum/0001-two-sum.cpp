@@ -17,7 +17,7 @@ public:
             if (it != m.end()) {
                 auto [y, y_i] = *it;
 
-                if (x != y || x_i != y_i) { // OR x = target / 2
+                if (x_i != y_i) {
                     ans.emplace_back(x_i);
                     ans.emplace_back(y_i);
                     break;
