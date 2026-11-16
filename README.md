@@ -14,6 +14,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/jay-tau/leetcode-problems/tree/master/0001-two-sum) |
 | [0015-3sum](https://github.com/jay-tau/leetcode-problems/tree/master/0015-3sum) |
 | [0018-4sum](https://github.com/jay-tau/leetcode-problems/tree/master/0018-4sum) |
 | [0031-next-permutation](https://github.com/jay-tau/leetcode-problems/tree/master/0031-next-permutation) |
@@ -63,6 +64,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/jay-tau/leetcode-problems/tree/master/0001-two-sum) |
 | [0169-majority-element](https://github.com/jay-tau/leetcode-problems/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/jay-tau/leetcode-problems/tree/master/0229-majority-element-ii) |
 ## Divide and Conquer
