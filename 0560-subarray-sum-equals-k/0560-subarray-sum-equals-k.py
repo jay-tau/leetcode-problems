@@ -15,9 +15,7 @@ class Solution:
             if target in d:
                 ans += d[target]
             
-            d[current_prefix_sum] += 1
+            d[current_prefix_sum] += 1 # Insert current prefix-sum
 
-        print(f"prefix_sums: {prefix_sums}")
-        print(f"d: {d}")
 
         return ans
