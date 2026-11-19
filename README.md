@@ -24,6 +24,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0088-merge-sorted-array](https://github.com/jay-tau/leetcode-problems/tree/master/0088-merge-sorted-array) |
 | [0128-longest-consecutive-sequence](https://github.com/jay-tau/leetcode-problems/tree/master/0128-longest-consecutive-sequence) |
 | [0152-maximum-product-subarray](https://github.com/jay-tau/leetcode-problems/tree/master/0152-maximum-product-subarray) |
+| [0153-find-minimum-in-rotated-sorted-array](https://github.com/jay-tau/leetcode-problems/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0162-find-peak-element](https://github.com/jay-tau/leetcode-problems/tree/master/0162-find-peak-element) |
 | [0169-majority-element](https://github.com/jay-tau/leetcode-problems/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/jay-tau/leetcode-problems/tree/master/0229-majority-element-ii) |
@@ -126,6 +127,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Binary Search
 |  |
 | ------- |
+| [0153-find-minimum-in-rotated-sorted-array](https://github.com/jay-tau/leetcode-problems/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0162-find-peak-element](https://github.com/jay-tau/leetcode-problems/tree/master/0162-find-peak-element) |
 | [0493-reverse-pairs](https://github.com/jay-tau/leetcode-problems/tree/master/0493-reverse-pairs) |
 ## Binary Indexed Tree
