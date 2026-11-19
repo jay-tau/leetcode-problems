@@ -1,5 +1,4 @@
 class Solution:
-
     def findPeakElement(self, nums: list[int]) -> int:
         def _condition(l: list[int], i: int) -> bool:
             if i == 0:
