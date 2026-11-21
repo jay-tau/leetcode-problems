@@ -1,5 +1,5 @@
 class Solution:
-    def singleNonDuplicate(self, nums: List[int]) -> int:
+    def singleNonDuplicate(self, nums: list[int]) -> int:
         def _condition(l: list[int], i: int) -> bool:
             n: int = len(nums)
 
@@ -10,7 +10,7 @@ class Solution:
                 return not nums[i] == nums[i + 1]
             else:
                 return not nums[i] == nums[i - 1]
-        
+
         n: int = len(nums)
         lo: int = -1
         hi: int = n
@@ -22,5 +22,5 @@ class Solution:
                 hi = mid
             else:
                 lo = mid
-        
+
         return nums[hi]
