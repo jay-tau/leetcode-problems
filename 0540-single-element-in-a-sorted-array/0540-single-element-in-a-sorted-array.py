@@ -7,21 +7,21 @@ class Solution:
         while hi >= lo:
             mid: int = lo + (hi - lo) // 2
 
-            if mid+1 < n and nums[mid] == nums[mid+1]:
-                left_len = mid - lo
-                right_len = hi - (mid + 1)
+            if mid + 1 < n and nums[mid] == nums[mid + 1]:
+                left_len: int = mid - lo
+                right_len: int = hi - (mid + 1)
 
                 if left_len % 2 == 0:
                     lo = (mid + 1) + 1
                 else:
                     hi = mid - 1
-            elif mid -1 >= 0 and nums[mid] == nums[mid - 1]:
-                left_len = (mid - 1) - lo
-                right_len = hi - mid
+            elif mid - 1 >= 0 and nums[mid] == nums[mid - 1]:
+                left_len: int = (mid - 1) - lo
+                right_len: int = hi - mid
 
                 if left_len % 2 == 0:
                     lo = mid + 1
                 else:
                     hi = (mid - 1) - 1
-            else: # Neither neighbor is equal
+            else:  # Neither neighbor is equal
                 return nums[mid]
