@@ -4,7 +4,7 @@ from math import ceil
 class Solution:
     def minEatingSpeed(self, piles: list[int], h: int) -> int:
         def _condition(l: list[int], possible_speed: int, target_time: int) -> bool:
-            total_time: int = sum([ceil(x / possible_speed) for x in l])
+            total_time: int = sum(ceil(x / possible_speed) for x in l)
 
             return total_time <= target_time
 
