@@ -29,6 +29,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0162-find-peak-element](https://github.com/jay-tau/leetcode-problems/tree/master/0162-find-peak-element) |
 | [0169-majority-element](https://github.com/jay-tau/leetcode-problems/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/jay-tau/leetcode-problems/tree/master/0229-majority-element-ii) |
+| [0240-search-a-2d-matrix-ii](https://github.com/jay-tau/leetcode-problems/tree/master/0240-search-a-2d-matrix-ii) |
 | [0493-reverse-pairs](https://github.com/jay-tau/leetcode-problems/tree/master/0493-reverse-pairs) |
 | [0540-single-element-in-a-sorted-array](https://github.com/jay-tau/leetcode-problems/tree/master/0540-single-element-in-a-sorted-array) |
 | [0560-subarray-sum-equals-k](https://github.com/jay-tau/leetcode-problems/tree/master/0560-subarray-sum-equals-k) |
@@ -54,6 +55,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Matrix
 |  |
 | ------- |
+| [0240-search-a-2d-matrix-ii](https://github.com/jay-tau/leetcode-problems/tree/master/0240-search-a-2d-matrix-ii) |
 | [1254-number-of-closed-islands](https://github.com/jay-tau/leetcode-problems/tree/master/1254-number-of-closed-islands) |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/jay-tau/leetcode-problems/tree/master/3619-count-islands-with-total-value-divisible-by-k) |
 | [3882-minimum-xor-path-in-a-grid](https://github.com/jay-tau/leetcode-problems/tree/master/3882-minimum-xor-path-in-a-grid) |
@@ -81,6 +83,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0053-maximum-subarray](https://github.com/jay-tau/leetcode-problems/tree/master/0053-maximum-subarray) |
 | [0169-majority-element](https://github.com/jay-tau/leetcode-problems/tree/master/0169-majority-element) |
+| [0240-search-a-2d-matrix-ii](https://github.com/jay-tau/leetcode-problems/tree/master/0240-search-a-2d-matrix-ii) |
 | [0493-reverse-pairs](https://github.com/jay-tau/leetcode-problems/tree/master/0493-reverse-pairs) |
 ## Sorting
 |  |
@@ -132,6 +135,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/jay-tau/leetcode-problems/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/jay-tau/leetcode-problems/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0162-find-peak-element](https://github.com/jay-tau/leetcode-problems/tree/master/0162-find-peak-element) |
+| [0240-search-a-2d-matrix-ii](https://github.com/jay-tau/leetcode-problems/tree/master/0240-search-a-2d-matrix-ii) |
 | [0493-reverse-pairs](https://github.com/jay-tau/leetcode-problems/tree/master/0493-reverse-pairs) |
 | [0540-single-element-in-a-sorted-array](https://github.com/jay-tau/leetcode-problems/tree/master/0540-single-element-in-a-sorted-array) |
 ## Binary Indexed Tree
