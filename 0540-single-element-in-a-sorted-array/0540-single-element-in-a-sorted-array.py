@@ -7,9 +7,9 @@ class Solution:
                 return True
 
             if i % 2 == 0:
-                return not nums[i] == nums[i + 1]
+                return not l[i] == l[i + 1]
             else:
-                return not nums[i] == nums[i - 1]
+                return not l[i] == l[i - 1]
 
         n: int = len(nums)
         lo: int = -1
