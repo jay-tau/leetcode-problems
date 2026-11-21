@@ -25,7 +25,7 @@ class Solution:
 
             if max_x > up and max_x > down:
                 return (mid, max_pos)
-            
+
             elif up > max_x:
                 hi = mid
             else:
