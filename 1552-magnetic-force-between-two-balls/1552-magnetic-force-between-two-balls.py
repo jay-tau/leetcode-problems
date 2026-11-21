@@ -16,15 +16,13 @@ class Solution:
                 if x - last_ball >= mid:
                     last_ball = position[i]
                     ball_count += 1
-                
+
                 if ball_count >= m:
                     break
-            
+
             if ball_count >= m:
                 lo = mid
             else:
                 hi = mid
-        
+
         return lo
-
-
