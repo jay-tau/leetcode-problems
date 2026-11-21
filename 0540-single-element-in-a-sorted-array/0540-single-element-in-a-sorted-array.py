@@ -1,6 +1,7 @@
 class Solution:
     def singleNonDuplicate(self, nums: list[int]) -> int:
         def _condition(l: list[int], i: int) -> bool:
+            # Form pairs and check where they're not equal
             n: int = len(nums)
 
             if i == n - 1:
