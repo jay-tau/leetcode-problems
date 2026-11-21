@@ -1,27 +1,27 @@
 class Solution:
     def singleNonDuplicate(self, nums: list[int]) -> int:
-        def _condition(l: list[int], i: int) -> bool:
-            # Form pairs and check where they're not equal
-            n: int = len(nums)
-
-            if i == n - 1:
-                return True
-
-            if i % 2 == 0:
-                return not l[i] == l[i + 1]
-            else:
-                return not l[i] == l[i - 1]
-
         n: int = len(nums)
-        lo: int = -1
-        hi: int = n
+        lo: int = 0
+        hi: int = n - 1
 
-        while hi - lo > 1:
-            mid = lo + (hi - lo) // 2
+        while hi >= lo:
+            mid: int = lo + (hi - lo) // 2
 
-            if _condition(nums, mid):
-                hi = mid
-            else:
-                lo = mid
+            if mid+1 < n and nums[mid] == nums[mid+1]:
+                left_len = mid - lo
+                right_len = hi - (mid + 1)
 
-        return nums[hi]
+                if left_len % 2 == 0:
+                    lo = (mid + 1) + 1
+                else:
+                    hi = mid - 1
+            elif mid -1 >= 0 and nums[mid] == nums[mid - 1]:
+                left_len = (mid - 1) - lo
+                right_len = hi - mid
+
+                if left_len % 2 == 0:
+                    lo = mid + 1
+                else:
+                    hi = (mid - 1) - 1
+            else: # Neither neighbor is equal
+                return nums[mid]
