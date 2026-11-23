@@ -18,7 +18,6 @@ class Solution:
                 current_len: int = right - left
                 max_len = max(max_len, current_len)
             else:
-                # current_char in set
                 while True:
                     left_char = s[left]
                     chars_in_substring.remove(left_char)
@@ -26,6 +25,5 @@ class Solution:
 
                     if current_char == left_char:
                         break
-
 
         return max_len
