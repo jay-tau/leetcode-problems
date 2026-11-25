@@ -11,6 +11,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/jay-tau/leetcode-problems/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0424-longest-repeating-character-replacement](https://github.com/jay-tau/leetcode-problems/tree/master/0424-longest-repeating-character-replacement) |
 | [2409-count-days-spent-together](https://github.com/jay-tau/leetcode-problems/tree/master/2409-count-days-spent-together) |
 ## Array
 |  |
@@ -87,6 +88,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0128-longest-consecutive-sequence](https://github.com/jay-tau/leetcode-problems/tree/master/0128-longest-consecutive-sequence) |
 | [0169-majority-element](https://github.com/jay-tau/leetcode-problems/tree/master/0169-majority-element) |
 | [0229-majority-element-ii](https://github.com/jay-tau/leetcode-problems/tree/master/0229-majority-element-ii) |
+| [0424-longest-repeating-character-replacement](https://github.com/jay-tau/leetcode-problems/tree/master/0424-longest-repeating-character-replacement) |
 | [0560-subarray-sum-equals-k](https://github.com/jay-tau/leetcode-problems/tree/master/0560-subarray-sum-equals-k) |
 ## Divide and Conquer
 |  |
@@ -189,5 +191,6 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/jay-tau/leetcode-problems/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0424-longest-repeating-character-replacement](https://github.com/jay-tau/leetcode-problems/tree/master/0424-longest-repeating-character-replacement) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/jay-tau/leetcode-problems/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 <!---LeetCode Topics End-->
