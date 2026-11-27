@@ -26,13 +26,10 @@ class Solution:
 
             image[row][col] = color
 
+            dx = (-1, 1, 0, 0)
+            dy = (0, 0, -1, 1)
             q.extend(
-                (
-                    (row - 1, col),
-                    (row + 1, col),
-                    (row, col - 1),
-                    (row, col + 1),
-                )
+                (row+dx[i], col+dy[i]) for i in range(4)
             )
 
         return image
