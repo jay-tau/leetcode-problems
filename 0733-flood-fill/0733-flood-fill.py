@@ -1,11 +1,9 @@
 from collections import deque
-from pprint import pprint
 
 
 class Solution:
     def floodFill(
-        self, image: list[list[int]], sr: int, sc: int, color: int
-    ) -> list[list[int]]:
+        self, image: list[list[int]], sr: int, sc: int, color: int) -> list[list[int]]:
         m: int = len(image)
         n: int = len(image[0])
 
@@ -14,7 +12,7 @@ class Solution:
         if color == original_color:
             return image
 
-        q: deque[tuple[int, int]] = deque([(sr, sc)])
+        q: deque[tuple[int, int]] = deque( [ (sr, sc) ] )
 
         while q:
             row, col = q.popleft()
@@ -29,7 +27,7 @@ class Solution:
             dx = (-1, 1, 0, 0)
             dy = (0, 0, -1, 1)
             q.extend(
-                (row+dx[i], col+dy[i]) for i in range(4)
+                (row + dx[i], col + dy[i]) for i in range(4)
             )
 
         return image
