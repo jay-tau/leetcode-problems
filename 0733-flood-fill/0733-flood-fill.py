@@ -12,22 +12,29 @@ class Solution:
         if color == original_color:
             return image
 
+
+        def is_valid(x: int, y: int) -> bool:
+            return 0 <= x < m and 0 <= y < n
+        def is_visited(x: int, y: int) -> bool:
+            return image[x][y] != original_color
+
+
         q: deque[tuple[int, int]] = deque( [ (sr, sc) ] )
+        image[sr][sc] = color
 
         while q:
             row, col = q.popleft()
 
-            if not (0 <= row < m and 0 <= col < n):
-                continue
-            if image[row][col] != original_color:
-                continue
-
-            image[row][col] = color
+            # image[row][col] = color
 
             dx = (-1, 1, 0, 0)
             dy = (0, 0, -1, 1)
-            q.extend(
-                (row + dx[i], col + dy[i]) for i in range(4)
-            )
+            for i in range(4):
+                neighbor_x, neighbor_y = row + dx[i], col + dy[i]
+                if is_valid(neighbor_x, neighbor_y) and not is_visited(neighbor_x, neighbor_y):
+                    q.append(
+                        (neighbor_x, neighbor_y)
+                    )
+                    image[neighbor_x][neighbor_y] = color
 
         return image
