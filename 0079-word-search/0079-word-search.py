@@ -2,30 +2,29 @@ class Solution:
     def exist(self, board: list[list[str]], word: str) -> bool:
         m: int = len(board)
         n: int = len(board[0])
-
-        def is_eligible(cell: tuple[int, int], word_idx: int) -> bool:
-            x: int
-            y: int
-            x, y = cell
-
-            return (0 <= x < m and 0 <= y < n) and not visited[x][y] and board[x][y] == word[word_idx]
         
 
         def dfs(x: int, y: int, word_idx: int, visited: list[list[bool]]) -> bool:
             if word_idx == len(word):
                 return True
             
+            if not (0 <= x < m and 0 <= y < n):
+                return False
+            if visited[x][y]:
+                return False
+            if board[x][y] != word[word_idx]:
+                return False
+            
             visited[x][y] = True
 
-            dx = (-1, 1, 0, 0)
-            dy = (0, 0, -1, 1)
-            neighbors = ((x + dx[i], y + dy[i]) for i in range(4))
+            directions = ((-1, 0), (1, 0), (0, -1), (0, 1))
 
-            for neighbor in neighbors:
-                if is_eligible(neighbor, word_idx):
-                    res: bool = dfs(neighbor[0], neighbor[1], word_idx+1, visited)
-                    if res:
-                        return True
+            for dx, dy in directions:
+                nx, ny = x+dx, y+dy
+                res: bool = dfs(nx, ny, word_idx+1, visited)
+                if res:
+                    visited[x][y] = False
+                    return True
             
             # Make this node free for future explorations
             visited[x][y] = False
@@ -38,7 +37,7 @@ class Solution:
         for i in range(m):
             for j in range(n):
                 if board[i][j] == word[0]:
-                    res: bool = dfs(i, j, 1, visited)
+                    res: bool = dfs(i, j, 0, visited)
                     if res:
                         return True
         
