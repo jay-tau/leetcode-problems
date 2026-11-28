@@ -11,6 +11,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/jay-tau/leetcode-problems/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0079-word-search](https://github.com/jay-tau/leetcode-problems/tree/master/0079-word-search) |
 | [0424-longest-repeating-character-replacement](https://github.com/jay-tau/leetcode-problems/tree/master/0424-longest-repeating-character-replacement) |
 | [2409-count-days-spent-together](https://github.com/jay-tau/leetcode-problems/tree/master/2409-count-days-spent-together) |
 ## Array
@@ -25,6 +26,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0053-maximum-subarray](https://github.com/jay-tau/leetcode-problems/tree/master/0053-maximum-subarray) |
 | [0075-sort-colors](https://github.com/jay-tau/leetcode-problems/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/jay-tau/leetcode-problems/tree/master/0078-subsets) |
+| [0079-word-search](https://github.com/jay-tau/leetcode-problems/tree/master/0079-word-search) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/jay-tau/leetcode-problems/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0088-merge-sorted-array](https://github.com/jay-tau/leetcode-problems/tree/master/0088-merge-sorted-array) |
 | [0128-longest-consecutive-sequence](https://github.com/jay-tau/leetcode-problems/tree/master/0128-longest-consecutive-sequence) |
@@ -49,6 +51,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Depth-First Search
 |  |
 | ------- |
+| [0079-word-search](https://github.com/jay-tau/leetcode-problems/tree/master/0079-word-search) |
 | [0733-flood-fill](https://github.com/jay-tau/leetcode-problems/tree/master/0733-flood-fill) |
 | [1254-number-of-closed-islands](https://github.com/jay-tau/leetcode-problems/tree/master/1254-number-of-closed-islands) |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/jay-tau/leetcode-problems/tree/master/3619-count-islands-with-total-value-divisible-by-k) |
@@ -67,6 +70,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Matrix
 |  |
 | ------- |
+| [0079-word-search](https://github.com/jay-tau/leetcode-problems/tree/master/0079-word-search) |
 | [0240-search-a-2d-matrix-ii](https://github.com/jay-tau/leetcode-problems/tree/master/0240-search-a-2d-matrix-ii) |
 | [0733-flood-fill](https://github.com/jay-tau/leetcode-problems/tree/master/0733-flood-fill) |
 | [1254-number-of-closed-islands](https://github.com/jay-tau/leetcode-problems/tree/master/1254-number-of-closed-islands) |
@@ -203,4 +207,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0078-subsets](https://github.com/jay-tau/leetcode-problems/tree/master/0078-subsets) |
+| [0079-word-search](https://github.com/jay-tau/leetcode-problems/tree/master/0079-word-search) |
 <!---LeetCode Topics End-->
