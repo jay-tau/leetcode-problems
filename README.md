@@ -24,6 +24,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0042-trapping-rain-water](https://github.com/jay-tau/leetcode-problems/tree/master/0042-trapping-rain-water) |
 | [0053-maximum-subarray](https://github.com/jay-tau/leetcode-problems/tree/master/0053-maximum-subarray) |
 | [0075-sort-colors](https://github.com/jay-tau/leetcode-problems/tree/master/0075-sort-colors) |
+| [0078-subsets](https://github.com/jay-tau/leetcode-problems/tree/master/0078-subsets) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/jay-tau/leetcode-problems/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0088-merge-sorted-array](https://github.com/jay-tau/leetcode-problems/tree/master/0088-merge-sorted-array) |
 | [0128-longest-consecutive-sequence](https://github.com/jay-tau/leetcode-problems/tree/master/0128-longest-consecutive-sequence) |
@@ -83,6 +84,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Bit Manipulation
 |  |
 | ------- |
+| [0078-subsets](https://github.com/jay-tau/leetcode-problems/tree/master/0078-subsets) |
 | [3882-minimum-xor-path-in-a-grid](https://github.com/jay-tau/leetcode-problems/tree/master/3882-minimum-xor-path-in-a-grid) |
 ## Hash Table
 |  |
@@ -197,4 +199,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0003-longest-substring-without-repeating-characters](https://github.com/jay-tau/leetcode-problems/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0424-longest-repeating-character-replacement](https://github.com/jay-tau/leetcode-problems/tree/master/0424-longest-repeating-character-replacement) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/jay-tau/leetcode-problems/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
+## Backtracking
+|  |
+| ------- |
+| [0078-subsets](https://github.com/jay-tau/leetcode-problems/tree/master/0078-subsets) |
 <!---LeetCode Topics End-->
